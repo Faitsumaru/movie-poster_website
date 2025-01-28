@@ -71,7 +71,7 @@
             </div>
         </div>
 
-        <a href="#" class="main__play"><i class="fa fa-play-circle" aria-hidden="true"></i> Watch Trailer</a>
+        <a href="#" class="main__play" onclick="toggleVideo()"><i class="fa fa-play-circle" aria-hidden="true"></i> Watch Trailer</a>
         <ul class="main__socials">
             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
             <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
@@ -79,6 +79,11 @@
         </ul>
 
     </main>
+
+    <div class="trailer">
+        <video src="assets/squidgame2.mp4" controls autoplay muted></video>
+        <img class="close" src="images/close.png" alt="x" onclick="toggleVideo()">
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
