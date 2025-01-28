@@ -4,13 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Movie Poster | Animated website</title>
 </head>
 <body>
     
-    <h1>Movie poster animated website!</h1>
+    <header class="header">
+        <a href="#" class="header__logo logo">iMovies</a>
+
+        <ul class="header__nav nav">
+            <li>
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </li>
+            <li><a href="#">Adults</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+
+        <div class="header__search">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
+
+    </header>
+
+    <main class="main banner">
+
+        <div class="main__content content">
+            <img src="images/logos/squid-game-logo.png" alt="squid-game-logo" class="movie-title">
+            <h4>
+                <span>2024</span><span><i>16+</i></span>
+                <span>6h 25min</span><span>Drama</span>
+            </h4>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa officia quae laudantium architecto consequatur dignissimos eos hic, perspiciatis est, tempora odio nemo quam quasi provident ex! Magnam aliquid ut beatae.
+            </p>
+            <div class="main__button btn">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            </div>
+        </div>
+
+        <div class="main__carousel-box">
+            <a href="#" class="play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
+            <ul class="sci">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+    </main>
 
 
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
