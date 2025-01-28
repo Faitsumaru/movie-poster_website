@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Movie Poster | Animated website</title>
 </head>
@@ -30,31 +31,52 @@
 
     </header>
 
-    <main class="main banner">
+    <main class="main__banner">
 
-        <div class="main__content content">
-            <img src="images/logos/squid-game-logo.png" alt="squid-game-logo" class="movie-title">
+        <div class="main__content active">
+            <img src="images/logos/squid-game-logo.png" alt="squid-game-logo" class="main__movie">
             <h4>
                 <span>2024</span><span><i>16+</i></span>
                 <span>6h 25min</span><span>Drama</span>
             </h4>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa officia quae laudantium architecto consequatur dignissimos eos hic, perspiciatis est, tempora odio nemo quam quasi provident ex! Magnam aliquid ut beatae.
+                Squid Game 2 - dolor sit, amet consectetur adipisicing elit. Ipsa officia quae laudantium architecto consequatur dignissimos eos hic, perspiciatis est, tempora odio nemo quam quasi provident ex! Magnam aliquid ut beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis commodi provident harum cum labore doloribus natus consequatur! Accusantium iste amet pariatur aperiam culpa voluptatum, reprehenderit facilis aut provident assumenda ex!
             </p>
-            <div class="main__button btn">
-                <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Watch</a>
-                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i>My List</a>
+            <div class="main__content-btn">
+                <a href="#"><i class="fa fa-play" aria-hidden="true"></i> Watch</a>
+                <a href="#"><i class="fa fa-plus" aria-hidden="true"></i> My List</a>
             </div>
         </div>
 
-        <div class="main__carousel-box">
-            <a href="#" class="play"><i class="fa fa-play-circle" aria-hidden="true"></i></a>
-            <ul class="sci">
-                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            </ul>
+        <div class="carousel-box">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="images/movies/squid-game-poster.jpg" alt="poster">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/movies/the-little-mermaid.jpeg" alt="poster">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/movies/65.jpg" alt="poster">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/movies/the-covenant.jpg" alt="poster">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/movies/the-black-demon.jpg" alt="poster">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/movies/the-tank.jpeg" alt="poster">
+                </div>
+            </div>
         </div>
+
+        <a href="#" class="main__play"><i class="fa fa-play-circle" aria-hidden="true"></i> Watch Trailer</a>
+        <ul class="main__socials">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        </ul>
 
     </main>
 
@@ -62,5 +84,10 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').carousel();
+        });
+    </script>
 </body>
 </html>
