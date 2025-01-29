@@ -73,7 +73,7 @@ body {
             height: 100%;
             color: white;
             background: transparent;
-            border: 1 solid rgba(255, 255, 255, .5);
+            border: 1px solid rgba(255, 255, 255, .5);
             outline: none;
             border-radius: 4px;
             padding: 0 10px 0 45px !important;
@@ -129,6 +129,7 @@ body {
         display: none;
         visibility: hidden;
         transform: scale(0);
+        margin-right: 25px;
         transition: .5s;
 
         h4 {
